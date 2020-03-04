@@ -1,0 +1,187 @@
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+<title>DripAttire.com</title> <!-- This is gna be the title that appears as the domain name.-->
+<link rel ="stylesheet" type="text/css" href="mystyle.css"> <!--link to mystyle css!-->
+</head>
+<body>
+
+<h1>Drip Attire</h1> <!--Title-->
+
+<!--This section of code is to do with the title of my website & navigation bar.
+ Class active indicates which page we are on. href"" should link to desired page.
+The navigation bar consists of the subheadings I included which were the subheadings of the other pages,
+being the home page, sign in page, contact us page & categories !-->
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a class="active" href="signup.html">Sign in</a>
+  <a class="active" href="contactus.html">Contact us</a>
+    <a class="active" href="categories.html">categories</a>
+</div>
+<h2 style="text-align:center">latest products</h2>
+
+<!-- Slideshow container --> <!--From lines 21 - 60, I included a slideshow which was used to display clothing products. The slideshow itslef was a manual one and would thereofore require a user to manually activate. The total slideshow consists of four images, and would be considered as a banner in effect !-->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="resources2/blackhoodie2.jpg" style="width:100%">
+    <div class="text">Black hoodie,mens</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="resources2/relaxationhoodie2.jpg" style="width:100%">
+    <div class="text">Green hoodie,mens</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="resources2/bluerelaxationhoodie.jpg" style="width:100%">
+    <div class="text">Black hoodie,mens</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="resources2/orangerelaxationhoodie.jpg" style="width:100%">
+    <div class="text">Orange hoodie,mens</div>
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<!--This is mini subheading!-->
+<h2>Follow the trend</h2>
+
+<!-- From lines 101 - 108, I included images of the clothing products and the width & height are adjusted  -->
+<img src="resources2/1joggers.jpg" alt="Flowers in Chania" width="310" height="400">
+
+<img src="resources2/greyfemalejoggers.jpg" alt="Flowers in Chania" width="310" height="400">
+
+<img src="resources2/greykidsjogger.jpg" alt="Flowers in Chania" width="310" height="400">
+
+<img src="resources2/blackfemvelvetjoggers.jpg" alt="Flowers in Chania" width="310" height="400">
+
+<!-- From lines 112 - 115, I included a short description of the overall wbesite's purpose.-->
+
+<h2>Drip Attire is an exciting new brand which focuses on high-quality products that fuse Americana inspired graphics with a British style.
+They are characterised by quality fabrics, unique detailing, world leading hand-drawn graphics and tailored fits with diverse styling.
+Drip Attire sells safely and securely to over 100 countries worldwide. The Drip Attire delivery promise is one of the best in the marketplace
+ offering great customer service and a hassle-free returns policy.</h2>
+
+<!--This is another mini subheading!-->
+<h1>Check out some of our offers</h1>
+
+</body>
+</html>
+
+<!-- From lines 95 - 101, I included images of the clothing products and the width & height are adjusted -->
+<body>
+	<div id="wrap">
+	<div id="columns" class="columns_4">
+  <figure>
+  <img src="resources2/puffer11.jpg">
+	<figcaption>Black puffer,mens</figcaption>
+    <span class="price">£45</span>
+    <a class="button" href="#">Add to cart</a>
+	</figure>
+
+	<figure>
+	<img src="resources2/puffer2.jpg" alt width="310" height="246">
+	<figcaption>Reflective puffer,womens </figcaption>
+    <span class="price">£50</span>
+    <a class="button" href="#">Add to cart</a>
+	</figure>
+
+  <figure>
+	<img src="resources2/puffer3.jpg" alt width="310" height="246">
+	<figcaption>Green puffer,mens</figcaption>
+    <span class="price">£44</span>
+    <a class="button" href="#">Add to cart</a>
+	</figure>
+
+	<figure>
+	<img src="resources2/puffer4.jpg" alt width="310" height="246">
+	<figcaption>Red puffer,womens</figcaption>
+    <span class="price">£45</span>
+    <a class="button" href="#">Add to cart</a>
+	</figure>
+
+   <figure>
+	 <img src="resources2/bluekidspuffer.jpg" alt width="310" height="246">
+	<figcaption>Blue puffer,kids</figcaption>
+    <span class="price">£20</span>
+    <a class="button" href="#">Add to cart</a>
+	</figure>
+
+   <figure>
+	 <img src="resources2/blackvelvetjacket.jpg" alt width="310" height="246">
+	<figcaption> velvet black, mens</figcaption>
+     <span class="price">£45</span>
+     <a class="button" href="#">Add to cart</a>
+	</figure>
+
+	<figure>
+	<img src="resources2/womenbeigefur.jpg" alt width="310" height="246">
+	<figcaption>Beige fur,womens</figcaption>
+    <span class="price">£45</span>
+    <a class="button" href="#">Add to cart</a>
+	</figure>
+
+   <figure>
+	<img src="resources2/womensorangefur.jpg" alt width="310" height="246">
+	<figcaption>Orange fur, womens</figcaption>
+     <span class="price">£45</span>
+     <a class="button" href="#">Add to cart</a>
+	</figure>
+
+<!--Lastly, I included a video lin. The video itself was a clothing commercial. -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-GzwNbq8EGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</body>
